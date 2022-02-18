@@ -7,17 +7,9 @@ const icon = document.querySelector('.icon img');
 
 // update UI based on the data
 const updateUI = (data) => {
-    // const cityDetails = data.cityDetails;
-    // const weatherDetails = data.weatherDetails;
-
-    // ----------
-    // we can do the upper code with the newly introduced "destructuring method"
-    // in that case we have to create variable with same name, and this will still return code like the upper code
-    // -----------
 
     // destructuring
     const {cityDetails, weatherDetails} = data;
-    console.log(data);
 
     // DOM update with data
     weatherInfoSection.innerHTML = `
