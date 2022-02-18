@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-200 ">
+    <div class="max-w-md mx-auto my-10">
+        <h1 class="py-8 mb-4 text-5xl text-center uppercase text-cyan-500">Weather App</h1>
+        <!-- search form -->
+        <form class="text-center form search-location">
+            <label for="city" class="block mb-4 text-sm font-light leading-3 tracking-widest text-gray-500 uppercase">Enter a location for weather information</label>
+            <input type="text" name="city" class="w-full px-4 py-2 text-sm transition duration-300 border border-transparent rounded-md shadow-xl outline-none font-extralight bg-gray-50 shadow-gray-200 focus:shadow-md focus:shadow-cyan-50 focus:border-cyan-300 focus:border-2" placeholder="e.g. chicago">
+        </form>
+        <!-- weather icon -->
+        <div class="hidden mt-10 overflow-hidden rounded shadow-lg card">
+            <img src="assets/img/default.jpg" alt="Today's image for Weather" class="object-cover object-top w-full time card-image-top h-96">
+            <div class="relative w-20 p-2 mx-auto -mb-10 text-center bg-gray-200 rounded-full shadow -top-10 icon">
+                <img class="w-20 p-2" src="" alt="">
+            </div>
+            <div class="p-4 text-center text-gray-500 uppercase details">
+                <h5 class="my-3 tracking-[0.3em] uppercase font-medium text-md">City Name</h5>
+                <div class="my-3 text-xs tracking-widest text-gray-400">Weather Condition</div>
+                <div class="my-8 text-6xl tracking-wider font-extralight">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="assets/js/forecast.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
